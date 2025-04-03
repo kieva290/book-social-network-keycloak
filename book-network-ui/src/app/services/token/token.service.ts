@@ -1,0 +1,49 @@
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class TokenService {
+
+  constructor() { }
+
+  set token(token: string) {
+    localStorage.setItem('token', token);
+  }
+
+  get token() {
+    return localStorage.getItem('token') as string;
+  }
+
+  // isTokenValid() {
+  //   const token = this.token;
+  //   if(!token) {
+  //     return false;
+  //   }
+  //   // decode the token
+  //   const jwtHelper = new JwtHelperService();
+  //   // check expiry date
+  //   const isTokenExpired = jwtHelper.isTokenValid(token);
+  //   if (isTokenExpired) {
+  //     localStorage.clear();
+  //     return false;
+  //   }
+  //   return true;
+  // }
+
+  // isTokenNotValid() {
+  //   return !this.isTokenValid();
+  // }
+  //
+  // get userRoles(): string[] {
+  //   const token = this.token;
+  //   if (token) {
+  //     const jwtHelper = new JwtHelperService();
+  //     const decodedToken = jwtHelper.decodeToken(token);
+  //     console.log(decodedToken.authorities);
+  //     return decodedToken.authorities;
+  //   }
+  //   return [];
+  // }
+
+}

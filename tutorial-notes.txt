@@ -1,0 +1,74 @@
+mono-repo-approach:
+-------
+spring-io project setup, with the dependencies etc:
+https://start.spring.io/#!type=maven-project&language=java&platformVersion=3.4.3&packaging=jar&jvmVersion=17&groupId=com.social&artifactId=book-network&name=book-network-api&description=Spring%20Boot%20project%20for%20social%20network&packageName=com.social.book&dependencies=web,data-jpa,validation,mail,security,thymeleaf,postgresql,lombok
+--------
+mail-server via browser: "http://localhost:1080/#/",
+issue with lombok annotation processing, "Compiler --> Annotation Procesors"
+check project setting, and the "Store generated sources to", should tick radio button "Module content root",
+ensure the radio button "Obtain procesors from project classpath" is the selected one,
+-----------
+the Postgres environment variables and initialization scriptsare only used if Postgres doesn't find an existing database on startup,
+the problm is not the existing images on your host, but it stems from the volume (or bind mount directory) being already initialized after your first start,
+the postgres user, and database creatinon only happens on the first start (i.e. "/var/lib/postgres/data") must not already contain database files,
+------------
+virtual file system: 
+example postgres: "/var/lib/postgres/data",
+data is lost/gone when restarting or removing a container,
+folder in physical file system (host) is mounted into the virtual file system of docker (container),
+-----
+reason we're not able to connect to postgres via IntelliJ, is because postgres is running in an isolated environment, inside docker,
+so we need to expose ports,
+------------
+The specified key byte array is 168 bits which is not secure enough for any JWT HMAC-SHA algorithm.  
+The JWT JWA Specification (RFC 7518, Section 3.2) states that keys used with HMAC-SHA algorithms MUST have a size >= 256 bits 
+(the key size must be greater than or equal to the hash output size).  Consider using the io.jsonwebtoken.security.Keys#secretKeyFor(SignatureAlgorithm) 
+method to create a key guaranteed to be secure enough for your preferred HMAC-SHA algorithm.  See https://tools.ietf.org/html/rfc7518#section-3.2 for more information.
+	at io.jsonwebtoken.security.Keys.hmacShaKeyFor(Keys.java:96) ~[jjwt-api-0.11.5.jar:0.11.5]
+
+fix by changing the secret-key to below: in the application-dev.yml file
+
+secret-key: 9a4f2c8d3b7a1e6f45c8a0b3f267d8b1d4e6f3c8a9d2b5f8e3a9c8b5f6v8a3d9
+----------------
+zsh + command not found + ng
+
+fix below:
+sudo npm install -g @angular/cli@latest
+--------
+angular preventing edit file mode, command below, to change the red/write permissions of files in a folder, recurssively,
+"sudo chmod -R 777 /Users/kelvin.dzikiti/workspaces/book-social-network/book-network-ui/src/app"
+-------------
+swagger api url: "http://localhost:8088/api/v1/swagger-ui/index.html"
+------
+How to fix http 500 error when accessing /v3/api-docs in Spring Boot with springdoc-openapi-starter-webmvc-ui,
+swagger api + Fetch error + response status is 500 /api/v1/v3/api-docs
+If anybody uses Spring Boot v3.4.0 or later with springdoc-openapi-starter-webmvc-ui v2.6.0 and gets similar error on the swagger page, 
+update springdoc-openapi-starter-webmvc-ui to v2.7.0 or later should solve the issue.
+--------
+TS-996008 + Component AppComponent is standalone, and cannot be declared in an NgModule.
+fix url: "https://stackoverflow.com/questions/79199579/angular-19-component-appcomponent-is-standalone-and-cannot-be-declared-in-an"
+-------
+n v19, Angular swapped the default value for standalone from false to true. It means that every component declared is now implicitly standalone.
+
+If your app relies on NgModule that declare components/pipes/directives, you will need to add standalone: false to all of those:
+
+@Component({
+  standalone: false,  // this is now required when using NgModule
+  ...
+})
+export class AppComponent {}
+
+@NgModule({
+  declaration: [AppComponent], 
+  ...
+})
+export class AppModule {}
+--------
+url to the login page: "http://localhost:4200/login",
+-------------
+angular app trying to send request to the api service layer, getting CORS issue below:
+this is bebacuse the backend is blocking any requests from an origin it does not know,
+-------
+Access to XMLHttpRequest at 'http://localhost:8088/api/v1/auth/authenticate' from origin 'http://localhost:4200' 
+has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' 
+header is present on the requested resource.
