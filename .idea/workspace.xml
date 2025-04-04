@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e08dce4c-8860-4ea7-a8c1-34a64b6f296a" name="Changes" comment="" />
+    <list default="true" id="e08dce4c-8860-4ea7-a8c1-34a64b6f296a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookSpecification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BorrowedBookResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/file/FileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/history/BookTransactionHistoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-network/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,14 +27,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/book-network-ui" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/6.2.3/spring-web-6.2.3.jar!/org/springframework/http/HttpStatus.class" root0="FORCE_HIGHLIGHTING" />
@@ -52,8 +66,9 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.BookNetworkApiApplication.executor": "Debug",
-    "git-widget-placeholder": "<unknown>",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/kelvin.dzikiti/workspaces/book-social-network-keycloak",
     "node.js.detected.package.eslint": "true",
@@ -76,6 +91,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.social.book.book" />
       <recent name="com.social.book.email" />
       <recent name="com.social.book.auth" />
       <recent name="com.social.book.security" />
@@ -110,11 +126,22 @@
       <workItem from="1740574260998" duration="19781000" />
       <workItem from="1740663544711" duration="1965000" />
       <workItem from="1741070299438" duration="50149000" />
-      <workItem from="1743411882899" duration="10128000" />
+      <workItem from="1743411882899" duration="18425000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
