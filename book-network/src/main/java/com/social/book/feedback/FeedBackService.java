@@ -43,7 +43,7 @@ public class FeedBackService {
 
     }
 
-    public PageResponse findAllFeedbacksByBook(Integer bookId, int page, int size, Authentication connectedUser) {
+    public PageResponse<FeedbackResponse> findAllFeedbacksByBook(Integer bookId, int page, int size, Authentication connectedUser) {
         Pageable pageable = PageRequest.of(page, size);
         User user = ((User) connectedUser.getPrincipal());
         Page<Feedback> feedbacks = feedBackRepository.findAllByBookId(bookId, pageable);
@@ -60,6 +60,7 @@ public class FeedBackService {
                 feedbacks.isFirst(),
                 feedbacks.isLast()
         );
+        
     }
 
 }
