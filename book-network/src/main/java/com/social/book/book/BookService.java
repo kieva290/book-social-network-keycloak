@@ -3,12 +3,10 @@ package com.social.book.book;
 import com.social.book.common.PageResponse;
 import com.social.book.exception.OperationNotPermittedException;
 import com.social.book.file.FileStorageService;
-import com.social.book.file.FileStorateService;
 import com.social.book.history.BookTransactionHistory;
 import com.social.book.history.BookTransactionHistoryRepository;
 import com.social.book.user.User;
 import jakarta.persistence.EntityNotFoundException;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
@@ -234,6 +232,6 @@ public class BookService {
                 .orElseThrow(() -> new EntityNotFoundException("No book found with ID:: " + bookId));
 
         User user = ((User) connectedUser.getPrincipal());
-        var profilePicture = fileStorageService.saveFile(file, connectedUser);
+        var profilePicture = fileStorageService.saveFile(file, user.getName());
     }
 }
