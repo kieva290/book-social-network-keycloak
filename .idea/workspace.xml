@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e08dce4c-8860-4ea7-a8c1-34a64b6f296a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/feedback/FeedBackService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/feedback/FeedBackService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/feedback/FeedbackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/feedback/FeedbackController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-network-ui/src/app/services/api.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/src/app/services/api.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-network-ui/src/app/services/models.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/src/app/services/models.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-network-ui/src/app/services/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/src/app/services/services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-network-ui/src/openapi/openapi.json" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/src/openapi/openapi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/history/BookTransactionHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/history/BookTransactionHistory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +74,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
-    "ts.external.directory.path": "/Users/kelvin.dzikiti/workspaces/book-social-network/book-network-ui/node_modules/typescript/lib",
+    "ts.external.directory.path": "/Users/kelvin.dzikiti/workspaces/book-social-network-keycloak/book-network-ui/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -116,7 +121,7 @@
       <workItem from="1740574260998" duration="19781000" />
       <workItem from="1740663544711" duration="1965000" />
       <workItem from="1741070299438" duration="50149000" />
-      <workItem from="1743411882899" duration="36288000" />
+      <workItem from="1743411882899" duration="39726000" />
     </task>
     <servers />
   </component>
