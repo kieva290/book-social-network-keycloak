@@ -233,5 +233,8 @@ public class BookService {
 
         User user = ((User) connectedUser.getPrincipal());
         var profilePicture = fileStorageService.saveFile(file, user.getName());
+        book.setBookCover(profilePicture);
+        bookRepository.save(book);
     }
+
 }
