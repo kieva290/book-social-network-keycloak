@@ -72,3 +72,12 @@ this is bebacuse the backend is blocking any requests from an origin it does not
 Access to XMLHttpRequest at 'http://localhost:8088/api/v1/auth/authenticate' from origin 'http://localhost:4200' 
 has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' 
 header is present on the requested resource.
+---------------
+had this issue when try to save a book:
+"java.lang.ClassCastException: Cannot cast java.lang.Integer to java.lang.String",
+this was the result of the way JPA auditing... "user_id" is of type Integer, but l had configured the JpaAuditing info
+"created_by" as String in the BaseEntity class,
+It should be noted that the "created_by" data-type hould match the userId data type in the User class,
+stacktrace link explaining how to fix the issue:
+"https://stackoverflow.com/questions/79137324/how-to-resolve-the-error-cannot-cast-java-lang-integer-to-java-lang-string"
+
