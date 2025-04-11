@@ -5,22 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e08dce4c-8860-4ea7-a8c1-34a64b6f296a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/,gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/614c864f-12b1-4caf-944f-e7e6fad9901b.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/614c864f-12b1-4caf-944f-e7e6fad9901b/storage_v2/_src_/database/book_social_network.cj-blA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/614c864f-12b1-4caf-944f-e7e6fad9901b/storage_v2/_src_/database/book_social_network.cj-blA/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/614c864f-12b1-4caf-944f-e7e6fad9901b/storage_v2/_src_/database/book_social_network.cj-blA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/614c864f-12b1-4caf-944f-e7e6fad9901b/storage_v2/_src_/database/book_social_network.cj-blA/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network-ui/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network-ui/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookSpecification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/common/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/common/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorial-notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tutorial-notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/file/FileStorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/file/FileStorageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/history/BookTransactionHistoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/history/BookTransactionHistoryRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +118,7 @@
       <workItem from="1740574260998" duration="19781000" />
       <workItem from="1740663544711" duration="1965000" />
       <workItem from="1741070299438" duration="50149000" />
-      <workItem from="1743411882899" duration="67228000" />
+      <workItem from="1743411882899" duration="69565000" />
     </task>
     <servers />
   </component>
