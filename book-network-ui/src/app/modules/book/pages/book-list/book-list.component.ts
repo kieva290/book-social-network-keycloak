@@ -4,12 +4,14 @@ import {PageResponseBookResponse} from '../../../../services/models/page-respons
 import {BookResponse} from '../../../../services/models/book-response';
 import {Router} from '@angular/router';
 import {NgForOf} from '@angular/common';
+import {BookCardComponent} from '../../components/book-card/book-card.component';
 
 @Component({
   selector: 'app-book-list',
   templateUrl: './book-list.component.html',
   imports: [
-    NgForOf
+    NgForOf,
+    BookCardComponent
   ],
   styleUrls: ['./book-list.component.scss']
 })
