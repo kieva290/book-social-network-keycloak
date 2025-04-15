@@ -1,28 +1,28 @@
 import {Component, OnInit} from '@angular/core';
-import {BookService} from '../../../../services/services/book.service';
 import {PageResponseBookResponse} from '../../../../services/models/page-response-book-response';
+import {BookService} from '../../../../services/services/book.service';
+import {Router, RouterLink} from '@angular/router';
+import {BookListComponent} from '../book-list/book-list.component';
 import {BookResponse} from '../../../../services/models/book-response';
-import {Router} from '@angular/router';
-import {NgForOf, NgIf} from '@angular/common';
 import {BookCardComponent} from '../../components/book-card/book-card.component';
+import {NgForOf} from '@angular/common';
 
 @Component({
-  selector: 'app-book-list',
-  templateUrl: './book-list.component.html',
+  selector: 'app-my-books',
   imports: [
-    NgForOf,
     BookCardComponent,
-    NgIf
+    NgForOf,
+    RouterLink
   ],
-  styleUrls: ['./book-list.component.scss']
+  templateUrl: './my-books.component.html',
+  styleUrl: './my-books.component.scss'
 })
-export class BookListComponent implements OnInit {
+export class MyBooksComponent implements OnInit {
+
   bookResponse: PageResponseBookResponse = {};
   page = 0;
   size = 5;
   pages: any = [];
-  message = '';
-  level: 'success' |'error' = 'success';
 
   constructor(
     private bookService: BookService,
@@ -30,12 +30,12 @@ export class BookListComponent implements OnInit {
   ) {
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.findAllBooks();
   }
 
   private findAllBooks() {
-    this.bookService.findAllBooks({
+    this.bookService.findAllBooksByOwner({
       page: this.page,
       size: this.size
     })
@@ -46,10 +46,10 @@ export class BookListComponent implements OnInit {
             .fill(0)
             .map((x, i) => i);
         }
-      });
+      })
   }
 
-  gotToPage(page: number) {
+  goToPage(page:  number) {
     this.page = page;
     this.findAllBooks();
   }
@@ -78,25 +78,28 @@ export class BookListComponent implements OnInit {
     return this.page === this.bookResponse.totalPages as number - 1;
   }
 
-  borrowBook(book: BookResponse) {
-    this.message = '';
-    this.level = 'success';
-    this.bookService.borrowBook({
+  archiveBook(book: BookResponse) {
+    this.bookService.updateArchivedStatus({
       'book-id': book.id as number
     }).subscribe({
       next: () => {
-        this.level = 'success';
-        this.message = 'Book successfully added to your list';
-      },
-      error: (err) => {
-        console.log(err);
-        this.level = 'error';
-        this.message = err.error.error;
+        book.archived = !book.archived
       }
     });
   }
 
-  displayBookDetails(book: BookResponse) {
-    this.router.navigate(['books', 'details', book.id]);
+  shareBook(book: BookResponse) {
+    this.bookService.updateShareableStatus({
+      'book-id': book.id as number
+    }).subscribe({
+      next: () => {
+        book.shareable = !book.shareable
+      }
+    });
   }
+
+  editBook(book: BookResponse) {
+    this.router.navigate(['books', 'manage', book.id]);
+  }
+
 }

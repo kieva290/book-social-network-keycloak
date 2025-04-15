@@ -162,13 +162,13 @@ public class BookService {
         }
 
         User user = ((User) connectedUser.getPrincipal());
-        if (!Objects.equals(book.getCreatedBy(), user.getId())) {
+        if (Objects.equals(book.getCreatedBy(), user.getId())) {
             throw new OperationNotPermittedException("You cannot borrow your own book");
         }
 
         final boolean isAlreadyBorrowedByUser = transactionHistoryRepository.isAlreadyBorrowedByUser(bookId, user.getId());
         if (isAlreadyBorrowedByUser) {
-            throw new OperationNotPermittedException("You already borrowed this book and it is not archived or thr return is not approved by the owner");
+            throw new OperationNotPermittedException("You already borrowed this book and it is not archived or the return is not approved by the owner");
         }
 
         final boolean isAlreacyBorrowedByOtherUser = transactionHistoryRepository.isAlreadyBorrowed(bookId);
