@@ -3,14 +3,15 @@ import {BookRequest} from '../../../../services/models/book-request';
 import {BookService} from '../../../../services/services/book.service';
 import {ActivatedRoute, Router, RouterLink} from '@angular/router';
 import {FormsModule} from '@angular/forms';
-import {NgForOf} from '@angular/common';
+import {NgForOf, NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-manage-book',
   imports: [
     FormsModule,
     RouterLink,
-    NgForOf
+    NgForOf,
+    NgIf
   ],
   templateUrl: './manage-book.component.html',
   styleUrl: './manage-book.component.scss'

@@ -110,7 +110,7 @@ export class BorrowedBookListComponent implements  OnInit {
       next: () => {
 
       }
-    })
+    });
   }
 
 }

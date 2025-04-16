@@ -1,10 +1,11 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {NgForOf} from '@angular/common';
+import {NgForOf, NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-rating',
   imports: [
-    NgForOf
+    NgForOf,
+    NgIf
   ],
   templateUrl: './rating.component.html',
   styleUrl: './rating.component.scss'
