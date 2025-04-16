@@ -4,13 +4,14 @@ import { LoginComponent } from './pages/login/login.component';
 import {RegisterComponent} from './pages/register/register.component';
 // import {authGuard} from './services/guard/auth.guard';
 import {ActivateAccountComponent} from './pages/activate-account/activate-account.component';
+import {authGuard} from './services/guard/auth.guard';
 
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   redirectTo: 'books',
-  //   pathMatch: 'full'
-  // },
+  {
+    path: '',
+    redirectTo: 'books',
+    pathMatch: 'full'
+  },
   {
     path: 'login',
     component: LoginComponent
@@ -26,7 +27,7 @@ const routes: Routes = [
   {
     path: 'books',
     loadChildren: () => import('./modules/book/book.module').then(m => m.BookModule),
-   // canActivate: [authGuard]
+    canActivate: [authGuard]
   }
 ];
 

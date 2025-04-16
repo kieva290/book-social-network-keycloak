@@ -6,10 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e08dce4c-8860-4ea7-a8c1-34a64b6f296a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-network-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-network-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-network-ui/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-network-ui/src/app/modules/book/book-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/src/app/modules/book/book-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network-ui/src/app/modules/book/components/rating/rating.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/src/app/modules/book/components/rating/rating.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network-ui/src/app/modules/book/pages/borrowed-book-list/borrowed-book-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/src/app/modules/book/pages/borrowed-book-list/borrowed-book-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network-ui/src/app/modules/book/pages/manage-book/manage-book.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/src/app/modules/book/pages/manage-book/manage-book.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-network-ui/src/app/services/token/token.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/src/app/services/token/token.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +126,7 @@
       <workItem from="1740574260998" duration="19781000" />
       <workItem from="1740663544711" duration="1965000" />
       <workItem from="1741070299438" duration="50149000" />
-      <workItem from="1743411882899" duration="98374000" />
+      <workItem from="1743411882899" duration="100812000" />
     </task>
     <servers />
   </component>
