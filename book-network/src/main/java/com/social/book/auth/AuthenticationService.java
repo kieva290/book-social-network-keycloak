@@ -11,6 +11,9 @@ import com.social.book.user.UserRepository;
 import jakarta.mail.MessagingException;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -25,6 +28,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class AuthenticationService {
 
     private final UserRepository userRepository;
@@ -34,6 +38,7 @@ public class AuthenticationService {
     private final RoleRepository roleRepository;
     private final EmailService emailService;
     private final TokenRepository tokenRepository;
+    private Logger logger = LoggerFactory.getLogger(AuthenticationService.class);
 
     @Value("${application.mailing.frontend.activation-url}")
     private String activationUrl;
@@ -58,6 +63,8 @@ public class AuthenticationService {
     private void sendValidationEmail(User user) throws MessagingException {
 
         var newToken = generateAndSaveActivationToken(user);
+
+        logger.info("<<<< generate token >>>> " + newToken);
 
         emailService.sendEmail(user.getEmail(),
                 user.getFullName(),
