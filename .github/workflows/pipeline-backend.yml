@@ -85,8 +85,8 @@ jobs:
       - name: Extract project version
         id: extract_version
         run: |
-          cd book-network
-          echo "VERSION=1.0.2" >> $GITHUB_OUTPUT
+          cd book-social-network-keycloak/book-network
+          echo "VERSION=$(./mvnw -q -Dexec.executable='echo' -Dexec.args='${project.version}' --non-recursive exec:exec)" >> $GITHUB_OUTPUT
 
       - name: Login to DockerHub
         uses: docker/login-action@v3
