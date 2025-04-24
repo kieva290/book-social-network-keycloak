@@ -85,6 +85,8 @@ jobs:
       - name: Extract project version
         id: extract_version
         run: |
+          pwd
+          ls
           cd book-network
           echo "VERSION=$(./mvnw -q -Dexec.executable='echo' -Dexec.args='${project.version}' --non-recursive exec:exec)" >> $GITHUB_OUTPUT
 
