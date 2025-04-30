@@ -87,7 +87,7 @@ jobs:
         with:
           java-version: 17
           distribution: 'corretto'
-          
+
       - name: Extract project version
         id: extract_version
         run: |
