@@ -39,4 +39,4 @@ jobs:
           file: docker/frontend/Dockerfile
           push: true
           platforms: linux/amd64
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/bsn-ui:latest, ${{ secrets.DOCKER_HUB_USERNAME }}/bsn-ui:${{ steps.extract_version.outputs.VERSION }}
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/bsn-ui:${{ steps.extract_version.outputs.VERSION }}, ${{ secrets.DOCKER_HUB_USERNAME }}/bsn-ui:latest
