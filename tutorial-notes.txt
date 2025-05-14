@@ -80,4 +80,21 @@ this was the result of the way JPA auditing... "user_id" is of type Integer, but
 It should be noted that the "created_by" data-type hould match the userId data type in the User class,
 stacktrace link explaining how to fix the issue:
 "https://stackoverflow.com/questions/79137324/how-to-resolve-the-error-cannot-cast-java-lang-integer-to-java-lang-string"
-
+-----------------
+keycloak: authentication provider, identity and access control mnagement, which has support for social login (google, facebook, github etc)
+setup keycloak within keycloak and angular application,
+--integrate keycloak within the angular application,
+--how to enable social authentication
+keycloak local-url access: "http://localhost:9090"
+username: "admin",
+password: "admin",
+default user created on keycloak realm "bsn":
+user: "kieva@mail.com"
+password: "password1234"
+so far we've created the "realm" --> "client" --> "user",
+--------
+integrate keycloak within angular:
+add dependency "keycloak-js"
+install the same version that you used for your keyloak server, in this case version "24.0.2",
+"npm i keycloak-js@24.0.2"
+create a service that starts-up connection to the keycloak server

@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e08dce4c-8860-4ea7-a8c1-34a64b6f296a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/pipeline-frontend.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/pipeline-frontend.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-network-ui/src/app/services/keycloak/user-profile.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak-flow.drawio" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-network-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-network-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-network-ui/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorial-notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tutorial-notes.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +75,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Users/kelvin.dzikiti/workspaces/book-social-network-keycloak/book-network-ui/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -91,6 +97,7 @@
       <recent name="$PROJECT_DIR$/uploads" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/book-network-ui/src/app/services/keycloak" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/docker/backend" />
       <recent name="$PROJECT_DIR$/book-network-ui/src/app/modules/book/pages" />
@@ -130,7 +137,15 @@
       <workItem from="1744887429117" duration="86000" />
       <workItem from="1744887522075" duration="7260000" />
       <workItem from="1745310168711" duration="33940000" />
-      <workItem from="1745505784475" duration="7564000" />
+      <workItem from="1745505784475" duration="17055000" />
+      <workItem from="1746477139736" duration="2573000" />
+      <workItem from="1746511465318" duration="322000" />
+      <workItem from="1746512654052" duration="14036000" />
+      <workItem from="1746555001011" duration="199000" />
+      <workItem from="1746618923589" duration="4452000" />
+      <workItem from="1746633654112" duration="45000" />
+      <workItem from="1746633815458" duration="1368000" />
+      <workItem from="1747217953823" duration="4432000" />
     </task>
     <servers />
   </component>
