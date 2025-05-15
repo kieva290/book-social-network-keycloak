@@ -98,3 +98,4 @@ add dependency "keycloak-js"
 install the same version that you used for your keyloak server, in this case version "24.0.2",
 "npm i keycloak-js@24.0.2"
 create a service that starts-up connection to the keycloak server
+frontend integration with keycloak is done, now we move onto backend integration with keycloak,
