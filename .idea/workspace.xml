@@ -5,34 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e08dce4c-8860-4ea7-a8c1-34a64b6f296a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/security/KeycloakJwtAuthenticationConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/BookNetworkApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/BookNetworkApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/auth/AunthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/auth/AunthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/auth/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/auth/AuthenticationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookSpecification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/config/BeansConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/config/BeansConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/file/FileStorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/file/FileStorageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/history/BookTransactionHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/history/BookTransactionHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/history/BookTransactionHistoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/history/BookTransactionHistoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/role/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/role/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/role/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/role/RoleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/security/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/security/JwtFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/security/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/security/JwtService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/security/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/security/UserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/user/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/user/Token.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/user/TokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/user/TokenRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/user/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorial-notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tutorial-notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/common/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/common/BaseEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +141,7 @@
       <workItem from="1746633815458" duration="1368000" />
       <workItem from="1747217953823" duration="4549000" />
       <workItem from="1747239262610" duration="50000" />
-      <workItem from="1747295409303" duration="9237000" />
+      <workItem from="1747295409303" duration="9938000" />
     </task>
     <servers />
   </component>
