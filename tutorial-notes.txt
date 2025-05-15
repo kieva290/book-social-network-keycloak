@@ -99,3 +99,9 @@ install the same version that you used for your keyloak server, in this case ver
 "npm i keycloak-js@24.0.2"
 create a service that starts-up connection to the keycloak server
 frontend integration with keycloak is done, now we move onto backend integration with keycloak,
+---------
+back-end,
+Keycloak is part of the OAuth2 security, soo we have to remove the dependency for jwt
+in the pom.xml file "spring-boot-starter-security", an replace it with "spring-boot-starter-oauth2-resource-server",
+make changes to the "application-dev.yml", configure oauth2 keycloak server
+make adjustments to "SecurityConfig.java" file

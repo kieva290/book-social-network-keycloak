@@ -31,7 +31,7 @@ import java.util.List;
 @Slf4j
 public class AuthenticationService {
 
-    private final UserRepository userRepository;
+    /*private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
     private final JwtService jwtService;
     private final AuthenticationManager authenticationManager;
@@ -143,6 +143,6 @@ public class AuthenticationService {
         savedToken.setValidatedAt(LocalDateTime.now());
         tokenRepository.save(savedToken);
 
-    }
+    }*/
 
 }
