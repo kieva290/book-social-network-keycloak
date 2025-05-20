@@ -91,6 +91,11 @@ password: "admin",
 default user created on keycloak realm "bsn":
 user: "kieva@mail.com"
 password: "password1234"
+
+second user:
+username: "john@mail.com"
+password: "password1234"
+
 so far we've created the "realm" --> "client" --> "user",
 --------
 integrate keycloak within angular:
@@ -105,3 +110,25 @@ Keycloak is part of the OAuth2 security, soo we have to remove the dependency fo
 in the pom.xml file "spring-boot-starter-security", an replace it with "spring-boot-starter-oauth2-resource-server",
 make changes to the "application-dev.yml", configure oauth2 keycloak server
 make adjustments to "SecurityConfig.java" file
+soo inside the "application-dev.yml" file the datasource service,
+by setting the flag "jpa.hibernate-ddl-auto: create", this wipes all the data to the database and creates an entirely new database,
+convenient if you are doing migration, in our case to keycloak, but rather dangerous for production migration, fine in the local dev environment,
+by default keycloak is using its embedded H2 database,
+the default database is located in "/opt/keycloak/data/h2" the name is keycloak.mv.db,
+if you want to back it up, map the folowing volume when running keycloak
+"docker run --volume /root/keycloak/data/:/opt/keycloak/data/h2/",
+the whole "data" folder could be used 
+---------
+$docker compose down
+$docket system prune -a
+-----
+on keycloak, to enabe the registration of users, below menu, from inside the realm
+Realm settings --> Login (tab) --> enable "User registration" radio button,
+should be able to see the "Register user" option on the login page,
+export keycloak configuration from inside the docket container:
+after navigating to this folder "/opt/keycloak/bin" run below command
+"./kc.sh export --file book-social-network --realm book-social-network"
+then run below command t copy the export file that been generated 
+"docker cp container-id:/opt/keycloak/bin/book-social-network copy-path", example below:
+"docker cp ac4f34828295:/opt/keycloak/bin/book-social-network ./keycloak/realm",
+
