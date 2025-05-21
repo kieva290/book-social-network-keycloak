@@ -96,6 +96,11 @@ second user:
 username: "john@mail.com"
 password: "password1234"
 
+third user:
+second user:
+username: "zobba@mail.com"
+password: "password1234"
+
 so far we've created the "realm" --> "client" --> "user",
 --------
 integrate keycloak within angular:

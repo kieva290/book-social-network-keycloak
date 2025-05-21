@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e08dce4c-8860-4ea7-a8c1-34a64b6f296a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/websocket/WebSocketConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network-ui/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network-ui/src/app/modules/book/components/menu/menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/src/app/modules/book/components/menu/menu.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network-ui/src/app/modules/book/components/menu/menu.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/src/app/modules/book/components/menu/menu.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network-ui/src/app/modules/book/pages/book-list/book-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/src/app/modules/book/pages/book-list/book-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network-ui/src/app/modules/book/pages/borrowed-book-list/borrowed-book-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/src/app/modules/book/pages/borrowed-book-list/borrowed-book-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network-ui/src/app/modules/book/pages/manage-book/manage-book.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/src/app/modules/book/pages/manage-book/manage-book.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network-ui/src/app/modules/book/pages/returned-books/returned-books.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/src/app/modules/book/pages/returned-books/returned-books.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network-ui/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/book-network-ui/src/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/book/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-network/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tutorial-notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tutorial-notes.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +146,7 @@
       <workItem from="1747217953823" duration="4549000" />
       <workItem from="1747239262610" duration="50000" />
       <workItem from="1747295409303" duration="18547000" />
-      <workItem from="1747733784498" duration="12220000" />
+      <workItem from="1747733784498" duration="14534000" />
     </task>
     <servers />
   </component>
