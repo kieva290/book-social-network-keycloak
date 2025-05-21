@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e08dce4c-8860-4ea7-a8c1-34a64b6f296a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/websocket/WebSocketConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/notification/Notification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/notification/NotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/notification/NotificationStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-network/src/main/java/com/social/book/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorial-notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tutorial-notes.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,11 +83,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.social.book.notification" />
       <recent name="com.social.book.security" />
       <recent name="com.social.book.feedback" />
       <recent name="com.social.book.book" />
       <recent name="com.social.book.email" />
-      <recent name="com.social.book.auth" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/uploads" />
@@ -146,7 +144,7 @@
       <workItem from="1747217953823" duration="4549000" />
       <workItem from="1747239262610" duration="50000" />
       <workItem from="1747295409303" duration="18547000" />
-      <workItem from="1747733784498" duration="14534000" />
+      <workItem from="1747733784498" duration="15123000" />
     </task>
     <servers />
   </component>
