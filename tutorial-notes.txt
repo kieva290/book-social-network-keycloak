@@ -125,10 +125,25 @@ $docket system prune -a
 on keycloak, to enabe the registration of users, below menu, from inside the realm
 Realm settings --> Login (tab) --> enable "User registration" radio button,
 should be able to see the "Register user" option on the login page,
+------------
+list the containers
+1. "docker ps"
+2. "docker exec -it ac4f34828295(container-id) /bin/sh"
+now you're inside the container, keycloak is inside the "opt" folder,
 export keycloak configuration from inside the docket container:
 after navigating to this folder "/opt/keycloak/bin" run below command
-"./kc.sh export --file book-social-network --realm book-social-network"
+3. "./kc.sh export --file book-social-network --realm book-social-network"
 then run below command t copy the export file that been generated 
+4. "exit" to exit the container interactive mode
 "docker cp container-id:/opt/keycloak/bin/book-social-network copy-path", example below:
-"docker cp ac4f34828295:/opt/keycloak/bin/book-social-network ./keycloak/realm",
-
+5. "docker cp ac4f34828295:/opt/keycloak/bin/book-social-network ./keycloak/realm",
+------------
+real time notification using web-socket,
+integrate pop-up library for the front-end using "ngx-toastr"
+Could not resolve compiling @angular/animations after installing "ngx-toastr",
+"angular/animations" package is a required dependency for the default toast
+force installation of the dependency module,
+"npm i @angular/animations --force"
+----
+Unexpected synthetic property @flyInOut found. Please make sure that: - Either `BrowserAnimationsModule` or `NoopAnimationsModule`
+I also faced this problem, the solution was to import the BrowserAnimationsModule module from "@angular/platform-browser/animations" to the AppModule

@@ -8,6 +8,8 @@ import { FormsModule } from '@angular/forms';
 import {HTTP_INTERCEPTORS, HttpClient, HttpClientModule} from '@angular/common/http';
 import {HttpTokenInterceptor} from './services/interceptor/http-token.interceptor';
 import {KeycloakService} from './services/keycloak/keycloak.service';
+import {ToastrModule} from 'ngx-toastr';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 export function kcFactory(kcService: KeycloakService) {
   return () => kcService.init();
@@ -20,9 +22,18 @@ export function kcFactory(kcService: KeycloakService) {
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ToastrModule.forRoot({
+      progressBar: true,
+      closeButton: true,
+      newestOnTop: true,
+      tapToDismiss: true,
+      positionClass: 'toast-bottom-right',
+      timeOut: 8000
+    })
   ],
   providers: [
     HttpClient,

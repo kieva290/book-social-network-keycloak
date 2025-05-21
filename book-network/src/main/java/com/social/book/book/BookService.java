@@ -195,7 +195,7 @@ public class BookService {
         }
 
 //        User user = ((User) connectedUser.getPrincipal());
-        if (!Objects.equals(book.getCreatedBy(), connectedUser.getName())) {
+        if (Objects.equals(book.getCreatedBy(), connectedUser.getName())) {
             throw new OperationNotPermittedException("You cannot borrow or return your own book");
         }
 

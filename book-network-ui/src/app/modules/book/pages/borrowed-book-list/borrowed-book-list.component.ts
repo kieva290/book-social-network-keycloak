@@ -10,6 +10,7 @@ import {NgForOf, NgIf} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import {RatingComponent} from '../../components/rating/rating.component';
 import {RouterLink} from '@angular/router';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-borrowed-book-list',
@@ -33,7 +34,8 @@ export class BorrowedBookListComponent implements  OnInit {
 
   constructor(
     private bookService: BookService,
-    private feedBackService: FeedbackService
+    private feedBackService: FeedbackService,
+    private toastService: ToastrService
   ) {
   }
 
@@ -97,6 +99,7 @@ export class BorrowedBookListComponent implements  OnInit {
         if (withFeedBack) {
           this.giveFeedback();
         }
+        this.toastService.success('Book has been returned and the owner is notified', 'Success');
         this.selectedBook = undefined;
         this.findAllBorrowedBooks();
       }

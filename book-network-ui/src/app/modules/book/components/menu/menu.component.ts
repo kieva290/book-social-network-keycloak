@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {RouterLink} from '@angular/router';
 import {KeycloakService} from '../../../../services/keycloak/keycloak.service';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-menu',
@@ -13,7 +14,8 @@ import {KeycloakService} from '../../../../services/keycloak/keycloak.service';
 export class MenuComponent implements OnInit  {
 
   constructor(
-    private keycloakService: KeycloakService
+    private keycloakService: KeycloakService,
+    private toastService: ToastrService
   ) {
   }
 
@@ -32,6 +34,10 @@ export class MenuComponent implements OnInit  {
 
   async logout() {
     await this.keycloakService.logout();
+  }
+
+  get username() {
+    return this.keycloakService.keycloak.tokenParsed?.['given_name']
   }
 
 }
