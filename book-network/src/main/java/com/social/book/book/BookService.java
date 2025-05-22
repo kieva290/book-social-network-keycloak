@@ -5,6 +5,9 @@ import com.social.book.exception.OperationNotPermittedException;
 import com.social.book.file.FileStorageService;
 import com.social.book.history.BookTransactionHistory;
 import com.social.book.history.BookTransactionHistoryRepository;
+import com.social.book.notification.Notification;
+import com.social.book.notification.NotificationService;
+import com.social.book.notification.NotificationStatus;
 import com.social.book.user.User;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
@@ -22,6 +25,7 @@ import java.util.List;
 import java.util.Objects;
 
 import static com.social.book.book.BookSpecification.withOwnerId;
+import static com.social.book.notification.NotificationStatus.*;
 
 @Service
 @RequiredArgsConstructor
@@ -33,6 +37,7 @@ public class BookService {
     private final BookMapper bookMapper;
     private final BookTransactionHistoryRepository transactionHistoryRepository;
     private final FileStorageService fileStorageService;
+    private final NotificationService notificationService;
 
     public Integer save(BookRequest request, Authentication connectedUser) {
 //        User user = ((User) connectedUser.getPrincipal());
@@ -183,6 +188,16 @@ public class BookService {
                 .returnApproved(false)
                 .build();
 
+        // send book borrowed notification
+        notificationService.sendNotification(
+                book.getCreatedBy(),
+                Notification.builder()
+                        .status(BORROWED)
+                        .message("Your book has been borrowed")
+                        .bookTitle(book.getTitle())
+                        .build()
+        );
+
         return transactionHistoryRepository.save(bookTransactionHistory).getId();
 
     }
@@ -203,6 +218,17 @@ public class BookService {
                 .orElseThrow(() -> new OperationNotPermittedException("You did not borrow this book"));
 
         bookTransactionHistory.setReturned(true);
+
+        // send return book notification
+        notificationService.sendNotification(
+                book.getCreatedBy(),
+                Notification.builder()
+                        .status(RETURNED)
+                        .message("Your book has been RETURNED")
+                        .bookTitle(book.getTitle())
+                        .build()
+        );
+
         return transactionHistoryRepository.save(bookTransactionHistory).getId();
         
     }
@@ -223,7 +249,20 @@ public class BookService {
                 .orElseThrow(() -> new OperationNotPermittedException("The book is not returned yet. You cannot approve its return"));
 
         bookTransactionHistory.setReturnApproved(true);
-        return transactionHistoryRepository.save(bookTransactionHistory).getId();
+
+        var saved = transactionHistoryRepository.save(bookTransactionHistory);
+
+        // send approved return borrowed book notification
+        notificationService.sendNotification(
+                bookTransactionHistory.getCreatedBy(),
+                Notification.builder()
+                        .status(RETURN_APPROVED)
+                        .message("Your book return has been approved")
+                        .bookTitle(book.getTitle())
+                        .build()
+        );
+
+        return saved.getId();
 
     }
 
